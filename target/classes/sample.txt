@@ -1,0 +1,4 @@
+Object Oriented Programming (OOP) in Selenium Automation is crucial for buiding robust and scalable test scripts.
+1)Inheritance:-Inheritance means extending the features of child  with the feature of parents.
+In my project, we have created Base class ,where we have initialized Web driver Interface, Config File, Web driver Wait and so on. We extend the Base Class in our Test Class and Utility Class.
+
