@@ -27,15 +27,16 @@ public class RemoveDupFromString {
 		for (int i = 0; i < name.length(); i++) {
 			set.add(name.charAt(i));
 		}
-		for (Character c : set) {
+	for (Character c : set) {
 			System.out.print(c);
 		}
+		//System.out.println(set);
 		
 	}
 
 	public static void main(String[] args) {
-		 removeDuplicates("sssshrikantttss");
-		//usingSet("testingGG");
+		// removeDuplicates("sssshrikantttss");
+		usingSet("testingGG");
 	}
 
 }

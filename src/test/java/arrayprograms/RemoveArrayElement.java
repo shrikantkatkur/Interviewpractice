@@ -11,7 +11,7 @@ public class RemoveArrayElement {
 		int count = 0;
 		for (int i = 0; i < x.length; i++) {
 			if (element == x[i]) {
-				for (int j = i; j < x.length - 1; j++) {// -1 because aray index of out of bound
+				for (int j = i; j < x.length-1 ; j++) {// -1 because aray index of out of bound
 					x[j] = x[j + 1];
 				}
 				count++;

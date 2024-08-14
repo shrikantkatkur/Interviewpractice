@@ -35,7 +35,7 @@ public class DuplicateElementsOfArray {
 
 	public static void main(String[] args) {
 		int[] x = { 10, 20, 30, 50, 20, 30, 40, 50, 20, 30, 30, 50,100};
-		// usingRegularMethod(x);
+		 usingRegularMethod(x);
 		usingHashMap(x);
 
 	}

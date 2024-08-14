@@ -1,9 +1,7 @@
 package javaBasicMathCoding;
 
 public class PrimeNumber {
-	static int count=0;
 	public static void printPrimeNumberRange(int Number) {
-		
 		System.out.println("all prime numbers upto " + Number + " are");
 		for (int i = 0; i <=Number; i++) {
 			int temp = 0;
@@ -13,11 +11,10 @@ public class PrimeNumber {
 				}
 			}
 			if (temp == 0) {
-				count++;
 				System.out.print(i+",");
 			}
 		}
-		System.out.println(count);
+		System.out.println();
 	}
 
 	public static void checkPrimeNumber(int Number) {
@@ -37,7 +34,7 @@ public class PrimeNumber {
 	}
 
 	public static void main(String[] args) {
-		printPrimeNumberRange(97);
-		checkPrimeNumber(97);
+		printPrimeNumberRange(50);
+		//checkPrimeNumber(97);
 	}
 }

@@ -49,7 +49,7 @@ public class ArrayAppend {
 	
 
 	public static void main(String[] args) {
-		usingRegularMethod();
+		//usingRegularMethod();
 		usingAl();
 	}
 

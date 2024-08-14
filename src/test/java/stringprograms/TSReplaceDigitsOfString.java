@@ -18,9 +18,17 @@ public class TSReplaceDigitsOfString {
 		System.out.println(s);
 	}
 	
+	public static void extractDigitsOnly() {
+		String s="ae123i45ou";
+		String s1=s.replaceAll("[A-Za-z]","");
+		String s2=s.replaceAll("[0-9]","");
+		System.out.println(s1+" "+s2);
+	}
+	
 	public static void main(String[] args) {
-		usingRegularMethod();
-		usingReplaceAll();
+		//usingRegularMethod();
+		//usingReplaceAll();
+		extractDigitsOnly();
 	}
 
 }

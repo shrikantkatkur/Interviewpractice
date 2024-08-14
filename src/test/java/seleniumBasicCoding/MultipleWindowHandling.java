@@ -17,17 +17,19 @@ public class MultipleWindowHandling {
 		String parentWindow = wait.driver.getWindowHandle();
 		wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-fb\"])[1]")).click();
 		wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-tw\"])[1]")).click();
-		wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-insta\"])[1]")).click();
-		wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-yt\"])[1]")).click();
-		wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-tg\"])[1]")).click();
+		//wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-insta\"])[1]")).click();
+		//wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-yt\"])[1]")).click();
+		//wait.driver.findElement(By.xpath("(//a[@class=\"mobile-sprite footer-tg\"])[1]")).click();
 		Set<String> allHandles = wait.driver.getWindowHandles();
 		for (String handle : allHandles) {
 			if (handle.equalsIgnoreCase(parentWindow)) {
-
-			} else {
 				wait.driver.switchTo().window(handle);
-				String windowTtitle = wait.driver.getTitle();
-				System.out.println(windowTtitle);
+				System.out.println("closing parent window");
+				wait.driver.close();
+			} else {
+				//wait.driver.switchTo().window(handle);
+				//String windowTtitle = wait.driver.getTitle();
+				//System.out.println(windowTtitle);
 			}
 		}
 	}

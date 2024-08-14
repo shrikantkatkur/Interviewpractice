@@ -17,7 +17,8 @@ public class ALAllMethods {
 		}
 		//al1.addAll(al2);
 		al1.removeAll(al2);//it will remove common elemnt from 1st array 
-		//al1.retainAll(al2);//it will retain uncomman element or simply find duplicates from 2 arrays
+		//al1.retainAll(al2);//it will retain uncomman element or simply remove elements from 1st array which are present in second also
+		
 		System.out.println(al1);
 
 	}

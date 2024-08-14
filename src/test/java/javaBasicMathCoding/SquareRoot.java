@@ -11,7 +11,7 @@ public class SquareRoot {
 	}
 
 	public static void main(String[] args) {
-		SquareRoot.squareRoot(49);
+		SquareRoot.squareRoot(50);
 	}
 
 }

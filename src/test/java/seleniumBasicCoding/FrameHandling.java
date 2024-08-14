@@ -15,6 +15,7 @@ public class FrameHandling {
 		WaitsDemo wait = new WaitsDemo();
 		wait.driver.get("https://www.testingshastra.com/parent-window/");
 		wait.driver.manage().window().maximize();
+		Thread.sleep(5000);
 		wait.driver.findElement(By.xpath("//button[@class=\"pum-close popmake-close\"]")).click();
 		// driver.findElement(By.xpath("//button[@class=\"pum-close
 		// popmake-close\"]")).click();

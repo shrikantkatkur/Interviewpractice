@@ -2,7 +2,7 @@ package javaBasicMathCoding;
 
 public class FibonachiSeries {
 
-	public void printFibonachi(int number) {
+	public static void printFibonachi(int number) {
 		int a=0,b=1;
 		System.out.print(a+","+b);
 		int c;
@@ -16,8 +16,8 @@ public class FibonachiSeries {
 	}
 
 	public static void main(String[] args) {
-		FibonachiSeries fb = new FibonachiSeries();
-		fb.printFibonachi(10);
+	
+		printFibonachi(10);
 
 	}
 

@@ -8,8 +8,13 @@ public class Bank {
 	static {
 		b=new Bank();
 	}
-	public Bank() {
-		
+	public Bank() {//to stop inheritence,cant value
+		// code, useless code
+	}
+	
+	public int addition(int a,int b) {
+		int result=a+b;
+		return result;
 	}
 	public static Bank instanceMethod() {
 		return b;

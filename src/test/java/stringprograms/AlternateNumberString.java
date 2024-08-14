@@ -9,8 +9,8 @@ public class AlternateNumberString {
 		for (int i = 0; i < s.length(); i++) {
 			if (s.charAt(i) >= '0' && s.charAt(i) <= '9') {
 				int len = Integer.parseInt(s.charAt(i) + "");
-				for (int l = 0; l < len; l++) {
-					result = result + s.charAt(i - 1);
+				for (int l = 0; l <len; l++) {
+					result = result + s.charAt(i-1);
 				}
 			} else {
 				result = result + s.charAt(i);

@@ -7,20 +7,25 @@ public class ReplaceCharWithOccurerence {
 		// String is testing, chartoreplace is t ans--1es2ing
 		String str = "testings";
 		char charToReplace = 's';
-		if (str.indexOf(charToReplace) == -1) {
-			System.out.println("The given char is not avilable in string");
-			System.exit(0);
-		}
-		// logic to replace char occuerenece in string
-		int cnt = 1;
-		for (int i = 0; i < str.length(); i++) {
-			char ch = str.charAt(i);
-			if (ch == charToReplace) {
-				str = str.replaceFirst(String.valueOf(charToReplace), String.valueOf(cnt));
-				cnt++;
+		StringBuffer sb= new StringBuffer();
+		int count=0;
+		for(char c:str.toCharArray()) {
+			if(c==charToReplace) {
+				count++;
+				if(count==1) {
+					sb.append('1');
+				}else if(count==2) {
+					sb.append('2');
+				}else if(count==3) {
+					sb.append('3');
+				}else {
+					sb.append(c);
+				}
 			}
+			
 		}
-		System.out.println(str);
+		
+		System.out.println(sb.toString());
 
 	}
 

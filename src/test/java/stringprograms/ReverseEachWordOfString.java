@@ -26,10 +26,22 @@ public class ReverseEachWordOfString {
 		System.out.println(revString);
 		
 	}
+	//reverse entire string
+	public static void usingregularmethodEntire(String str) {
+		String[] words = str.split(" ");
+		String revString = "";
+		for (int j = words.length - 1; j >= 0; j--) {
+			StringBuffer sb= new StringBuffer(words[j]);
+			String revWord=new String (sb.reverse());
+			revString=revString+(revWord+" ");
+		}
+		System.out.println(revString);
+		
+	}
 	public static void main(String[] args) {
 		usingregularmethod("Hi I am Shrikant");
 		usingStringBuffer("Hello Everyone this shrikant ");
-		
+		usingregularmethodEntire("Hello Everyone this shrikant");
 
 	}
 }

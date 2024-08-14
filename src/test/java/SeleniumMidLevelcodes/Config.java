@@ -10,7 +10,7 @@ public class Config {
 
 	public String readProperty(String property)  {
 		String basedir = System.getProperty("user.dir");
-		String filepath=(basedir + "/src/main/resources/config.properties");
+		String filepath=basedir + "/src/main/resources/config.properties";
 		FileInputStream fis=null;
 		try {
 			fis=new FileInputStream(filepath);

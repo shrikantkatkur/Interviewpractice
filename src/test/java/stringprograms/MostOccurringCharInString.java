@@ -5,6 +5,32 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MostOccurringCharInString {
+	public static void usingForLoop(String s) {
+		
+		char mostFrequentChar = ' ';
+		int maxCount = 0;
+		char[] chr = s.toCharArray();
+		for (int i = 0; i < s.length(); i++) {
+			int count = 0;
+			char c = s.charAt(i);
+			for (int j = 0; j < s.length(); j++) {
+				if (c == chr[j]) {
+					count++;
+					chr[j] = 0;
+				}
+			}
+			if (count > 0) {
+				//System.out.println(c +"=" + count);
+			}
+			if(count>maxCount) {
+				maxCount=count;
+				mostFrequentChar=c;
+			}
+			
+			}
+		System.out.println("Most occured char is "+mostFrequentChar);
+
+	}
 
 	public static void getMostFrequentCharacter(String s) {
 		s = s.toLowerCase();
@@ -29,15 +55,10 @@ public class MostOccurringCharInString {
 		}
 		System.out.println("The most frequent character is: " + mostFrequentChar);
 	}
-	
-	
+
 	public static void main(String[] args) {
-//		String s="TestingmmMMMM";
-//		s=s.toLowerCase();
-//		int result =s.length()-s.replaceAll("t","").length();
-//		System.out.println("Character m "+"occures "+result+" times");
-		// usingHashMap("TestingmmMMMM");
-		getMostFrequentCharacter("ajhsdjkkkkkkkkahdajd");
+		// getMostFrequentCharacter("ajhsdjkkkkkkkkahdajd");
+		usingForLoop("ajhsdjkkkkkkkkahdajd");
 
 	}
 

@@ -41,7 +41,7 @@ public class SortingOfArray {
 		 usingRegularMethod(x);
 		// usingBuiltIn1(x);
 		//usingBuiltIn2(x);
-		//usingBuiltIn3(a);
+		usingBuiltIn3(a);
 
 	}
 

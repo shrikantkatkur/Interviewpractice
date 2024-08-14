@@ -34,8 +34,14 @@ public class IterateHashMapDemo {
 			System.out.print(e+",");
 		}
 		System.out.println("-----");
-		
-		//How to iterate Hashmap 3. using foreach and lamda->	very famous
+		//How to iterate Hashmap 3. using entryset and Map.Entry
+				for (Map.Entry<String, Integer> e : rollMap.entrySet()) {//use foreach loop 
+					System.out.println("MAP.ENTRY METHOD");
+					System.out.print(e+",");
+				}
+				System.out.println("-----");
+				
+		//How to iterate Hashmap 4. using foreach and lamda->	very famous
 						System.out.println("-----");
 				 rollMap.forEach((k,v) ->System.out.print("Key:"+k+"," +"Value:"+v));
 				}

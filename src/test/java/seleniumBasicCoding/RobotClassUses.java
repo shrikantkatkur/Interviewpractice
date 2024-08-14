@@ -17,15 +17,18 @@ public class RobotClassUses {
 //Best Suited for Keyboard Events--keypress,KeyRelease,Mousemove
 	WaitsDemo wait = new WaitsDemo();
 	
-	private void useTAB(int keyTohandle) throws AWTException {
+	public void useTAB(int keyTohandle) throws AWTException {
 		wait.driver.get("https://www.myntra.com/");
 		wait.driver.manage().window().maximize();
 		Robot robot=new Robot();                   
 		//keyTohandle=KeyEvent.VK_TAB;
-		robot.keyPress(keyTohandle);
-		robot.keyRelease(keyTohandle);
-		robot.keyPress(keyTohandle);
-		robot.keyRelease(keyTohandle);
+//		robot.keyPress(keyTohandle);
+//		robot.keyRelease(keyTohandle);
+//		robot.keyPress(keyTohandle);
+//		robot.keyRelease(keyTohandle);
+//		robot.mousePress(keyTohandle);
+//		robot.mouseRelease(keyTohandle);
+		robot.mouseWheel(100);
 	}
 	public void robotScreenshot() throws AWTException, IOException {
 		wait.driver.get("https://www.myntra.com/");
@@ -53,6 +56,7 @@ public class RobotClassUses {
 		//rb.mouseMove(1000,200);
 		//rb.useTAB(KeyEvent.VK_TAB);
 		rb.robotScreenshot();
+		rb.useTAB(10);
 	}
 
 }

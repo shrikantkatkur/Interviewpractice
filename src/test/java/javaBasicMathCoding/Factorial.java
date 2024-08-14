@@ -11,18 +11,17 @@ public class Factorial {
 	}
 
 	
-	
-	public void calFc(int number) {
+	static int fact=1;
+	public static void calFc(int number) {//using recursion
 		if(number>1) {
 			fact=fact*number;
 			calFc(number-1);
 		}
 	}
-static int fact=1;
+
 	public static void main(String[] args) {
-		//printFactorial(5);
-		Factorial fc=new Factorial();
-		fc.calFc(10);
+		printFactorial(5);
+		calFc(5);
 		System.out.println(fact);
 		
 	}

@@ -13,7 +13,8 @@ public class Dropdown {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.testingshastra.com/");
+		driver.get("www.testingshastra.com");
+		//driver.get("https://www.testingshastra.com/");
 		driver.manage().window().maximize();
 		driver.findElement(
 				By.xpath("//div[@id='popmake-22568']//button[@class='pum-close popmake-close' and @type='button']"))
@@ -27,17 +28,20 @@ public class Dropdown {
 		// courses.selectByVisibleText("REST API Testing");
 		// 3-Select-ByIndex
 		// courses.selectByIndex(6);
-		// 4.Without using Select Class
+		// 4.Without using Select Method
 		List<WebElement> allOptions = courses.getOptions();
+		int len=allOptions.size();
+		courses.selectByIndex(len);
+		/*				
 		for (WebElement option : allOptions) {
 			if (option.getText().equals("Automation Testing (Python Selenium)")) {
 				option.click();
 				break;
 
 			}
-
+*/
 		}
 
 	}
 
-}
+

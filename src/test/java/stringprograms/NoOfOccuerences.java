@@ -8,6 +8,24 @@ import java.util.Set;
 
 public class NoOfOccuerences {
 
+	public static void usingForloop(String s) {
+		char[] chr=s.toCharArray();
+		for(int i=0;i<s.length();i++) {
+			int count=0;
+			char c=s.charAt(i);
+			for(int j=0;j<s.length();j++) {
+				if(c==chr[j]) {
+					count++;
+					chr[j]=0;
+				}	
+			}
+			if(count>0) {
+				System.out.println(c+"="+count);
+			}
+		}
+
+		}
+
 	public static void usingHashMap(String s) {
 		s = s.toLowerCase();
 		char[] chr = s.toCharArray();
@@ -27,7 +45,8 @@ public class NoOfOccuerences {
 //		s = s.toLowerCase();
 //		int result = s.length() - s.replaceAll("t", "").length();//to find specific char occuerence
 //		System.out.println("Character m " + "occures " + result + " times");
-		usingHashMap("TestingmmMMMM");
+		//usingHashMap("TestingmmMMMM");
+		usingForloop("tessssssting");
 
 	}
 

@@ -15,7 +15,7 @@ public class ActionsClassToHandleMouseEevents {
 		driver.get("https://www.myntra.com/");
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
-		//action.doubleClick();
+		action.doubleClick();
 		WebElement kids=driver.findElement(By.xpath("//a[@data-group=\"kids\"]"));
 		action.moveToElement(kids);
 		//action.click(kids);
@@ -33,6 +33,8 @@ public class ActionsClassToHandleMouseEevents {
 		//action.contextClick();
 		//action.build();
 		action.perform();//write without fail,otherwise it will not work
+		
+		action.mo
 		
 		
 	}

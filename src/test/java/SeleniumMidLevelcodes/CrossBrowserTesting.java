@@ -2,15 +2,17 @@ package SeleniumMidLevelcodes;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
 
 import Exceptions.InvalidBrowserNameError;
 
 public class CrossBrowserTesting {
-	static WebDriver  driver;
+	public static WebDriver  driver;
 	
 	public static void openBrowser(String browserName) {
 		if(browserName.equalsIgnoreCase("Chrome")) {
@@ -29,6 +31,7 @@ public class CrossBrowserTesting {
 		openBrowser("Chrome");
 		System.out.println("opening myntra");
 		driver.get("https://www.myntra.com/");
+		//driver.findElement(RelativeLocator.with(By.xpath("")).toRightOf(""));
 	}
 	
 }

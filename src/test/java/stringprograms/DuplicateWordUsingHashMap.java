@@ -6,7 +6,7 @@ public class DuplicateWordUsingHashMap {
 	
 
 	public static void main(String[] args) {
-		String[] x= {"Shrikant","Kavita","Supriya","Suhasini","Shrikant","Kavita","Kavita","Shrikant"};
+		String[] x= {"Shrikant","Kavita","shri","Supriya","Suhasini","Supriya","Kavita","Kavita","Shrikant"};
 		HashMap<String,Integer> wordMap=new HashMap<String,Integer>();
 		int count=0;
 		for (String s : x) {
@@ -20,7 +20,7 @@ public class DuplicateWordUsingHashMap {
 		}
 		for (String word : wordMap.keySet()) {
 		if(wordMap.get(word)>1) {
-			System.out.println(word+":"+count);
+			System.out.println(word);
 			
 		}
 		}

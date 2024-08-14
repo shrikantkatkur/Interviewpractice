@@ -10,7 +10,8 @@ public class JDBC {
 		String s="INSERT INTO users VALUES(102,Shrikant,Katkur)";
 		//String s="UPDATE users SET uName=svk WHERE userid=102;
 		//String s="DELETE users WHERE userid=102";
-		ResultSet result=st.executeQuery(s);
+		//st.executeQuery(s);FOR SELECT QUERY
+		st.execute(s); //FOR insert,update,delete
 		con.close();
 
 	}

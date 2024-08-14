@@ -7,6 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 //aUTHENTICATION ALERT https://userid::password@www.myntra.com
 public class AlertHandling {
+	/*Alerts are commonly used for quick notifications, warnings, 
+	 * or to provide simple information to users. They interrupt 
+	 * the user's interaction until acknowledged.
+	 * */
+	
 	public void simpleAlert() {
 		WaitsDemo wait = new WaitsDemo();
 		wait.driver.get("https://www.testingshastra.com/simple-alert/");
@@ -22,9 +27,11 @@ public class AlertHandling {
 
 	}
 		public void promtAlert() throws InterruptedException {
+		//In prompt alert, we need to send any values and accept	
 			WaitsDemo wait = new WaitsDemo();
 			wait.driver.get("https://www.testingshastra.com/prompt/");
 			wait.driver.manage().window().maximize();
+			Thread.sleep(3000);
 			wait.driver.findElement(By.xpath("//button[@class=\"pum-close popmake-close\"]")).click();
 			//wait.fwait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class=\"card-btn two bold-font\"]")));
 			Thread.sleep(3000);
@@ -54,8 +61,8 @@ public class AlertHandling {
 	
 
 	public static void main(String[] args) throws InterruptedException {
-		new AlertHandling().simpleAlert();
-		//w AlertHandling().promtAlert();
+		//new AlertHandling().simpleAlert();
+		new AlertHandling().promtAlert();
 		//new AlertHandling().confirmationAlert();
 	}
 

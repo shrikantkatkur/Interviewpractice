@@ -1,7 +1,7 @@
 package staticdemo;
 
 public class Parent {
-	public static void m1() {
+	public  void m1() {//static,if make method,it cant be overided
 
 	}
 

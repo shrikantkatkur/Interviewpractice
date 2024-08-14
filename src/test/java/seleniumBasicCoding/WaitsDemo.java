@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 public class WaitsDemo {
 	WebDriver driver;
 	FluentWait<WebDriver> fwait;
-
+//FluentWait<WebDriver> fwait = new FluentWait<WebDriver>(driver);,to define fluentwait
 	public WaitsDemo() {//always define fluentwait in constructor,so thwt we can avoid multiple drivers
 		driver = new FirefoxDriver();
 		fwait = new FluentWait<WebDriver>(driver);

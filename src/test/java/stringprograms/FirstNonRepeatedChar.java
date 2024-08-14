@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class FirstNonRepeatedChar {
+	
 	public static void usingRegular(String str) {
 		for (int i = 0; i < str.length(); i++) {
 			boolean unique = true;

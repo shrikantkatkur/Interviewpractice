@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public class TSAddDigitsOfString {
 	public static void withoutUsingStringMethod(String s) {
 		Pattern p = Pattern.compile("[0-9]");
-		int result = 0;
 		Matcher m = p.matcher(s);
+		int result = 0;
 		while (m.find()) {
 			result = result + Integer.parseInt(m.group());
 		}

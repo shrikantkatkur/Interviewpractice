@@ -8,7 +8,7 @@ public class MethodOverloading {
 	public void print(int i) {
 		System.out.println("int");
 	}
-	public void print(int... i) {//behave array parameter
+	public void print(int... i) {//behave like array parameter
 		System.out.println("int...");
 	}
 	public void print(short i) {

@@ -6,10 +6,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Singleton {
 
 	private static WebDriver driver;
-	static {
+	static {//to excecute only once
 		driver=new FirefoxDriver();
 	}
-	private Singleton() {
+	private Singleton()//to stop inheritence 
+	{
 	}
 	public static WebDriver instanceMethod() {
 		return driver;

@@ -20,6 +20,7 @@ public class MostOccuredString {
 		// Set<Entry<Character, Integer>> es = cMap.entrySet();
 		for (Map.Entry<String, Integer> entry : cMap.entrySet()) {
 			if (entry.getValue() > maxCount) {
+				System.out.println(entry);
 				maxCount = entry.getValue();
 				mostFrequentString = entry.getKey();
 			}

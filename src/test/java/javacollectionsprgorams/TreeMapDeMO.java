@@ -16,6 +16,7 @@ public class TreeMapDeMO {
 		rollMap.put("Kant", 20);
 		rollMap.put("Ahrit", 17);
 		rollMap.put("Shrit123", 1);
+		rollMap.put("Shrikant", 111);
 		System.out.println(rollMap);
 	}
 
